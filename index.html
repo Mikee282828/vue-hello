@@ -15,8 +15,9 @@
     <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
 
     <div id="app">
-        <h1>{{ message }}</h1>
+        <h1 :class="color">{{ message }}</h1>
         <input type="text" v-model="message">
+        <input style="width:20rem;" type="text" v-model="color" placeholder="Inserisci tra: red, green, blue, purple, yellow">
     </div>
 
     <div id="prova">

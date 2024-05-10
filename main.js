@@ -4,7 +4,8 @@ createApp({
     data(){
         return {
             message: "Ciao fatto con vue",
-            image: "https://picsum.photos/200/300"
+            image: "https://picsum.photos/200/300",
+            color: ""
         }
     }
 }).mount("#app");
@@ -53,10 +54,13 @@ createApp({
 
 // app.mount("#app");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //prove
 const input = document.querySelector("#prova>input");
 const h1 = document.querySelector("#prova>h1");
 
 setInterval(function(){
-    h1.innerHTML = input.value;
+    if(h1.innerHTML != input.value){
+        h1.innerHTML = input.value;
+    }
 },0);
