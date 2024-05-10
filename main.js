@@ -1,12 +1,13 @@
-// const { createApp } = Vue;
+const { createApp } = Vue;
 
-// createApp({
-//     data(){
-//         return {
-//             message: "Ciao"
-//         }
-//     }
-// }).mount("#app");
+createApp({
+    data(){
+        return {
+            message: "Ciao",
+            image: "https://picsum.photos/200/300"
+        }
+    }
+}).mount("#app");
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -30,25 +31,25 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 
-const { createApp } = Vue;
+// const { createApp } = Vue;
 
-let configurazione = {
-    data(){
-        return {
-            message : "Ciao"
-        }
-    },
-    methods : {
-        ciao(){
-            console.log("ciao");
-        },
-        ciao2(){
-            console.log("arrivederci");
-        }
-    }
-};
+// let configurazione = {
+//     data(){
+//         return {
+//             message : "Ciao"
+//         }
+//     },
+//     methods : {
+//         ciao(){
+//             console.log("ciao");
+//         },
+//         ciao2(){
+//             console.log("arrivederci");
+//         }
+//     }
+// };
 
-let app = createApp(configurazione);
+// let app = createApp(configurazione);
 
-app.mount("#app");
+// app.mount("#app");
 
