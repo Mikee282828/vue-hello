@@ -8,20 +8,47 @@
 //     }
 // }).mount("#app");
 
-const createApp = Vue.createApp;
+////////////////////////////////////////////////////////////////////////////////
 
-// createApp prende in ingresso un oggetto
-createApp({
-    // contenente per ora data(){} che è una funzione che restituisce un oggetto
+// const createApp = Vue.createApp;
+
+// // createApp prende in ingresso un oggetto
+// createApp({
+//     // contenente per ora data(){} che è una funzione che restituisce un oggetto
+//     data(){
+//         return{
+//             message: "Ciao"
+//         }
+//     },
+//     // contenente per ora methods che è una chiave che ha come valore un oggetto composta da funzioni
+//     methods: {
+//         ciao(){
+//             console.log("ciao");
+//         }
+//     }
+// }).mount("#app");
+
+////////////////////////////////////////////////////////////////////////////////
+
+const { createApp } = Vue;
+
+let configurazione = {
     data(){
-        return{
-            message: "Ciao"
+        return {
+            message : "Ciao"
         }
     },
-    // contenente per ora methods che è una chiave che ha come valore un oggetto composta da funzioni
-    methods: {
+    methods : {
         ciao(){
             console.log("ciao");
+        },
+        ciao2(){
+            console.log("arrivederci");
         }
     }
-}).mount("#app");
+};
+
+let app = createApp(configurazione);
+
+app.mount("#app");
+
