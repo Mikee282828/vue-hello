@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
     data(){
         return {
-            message: "Ciao",
+            message: "Ciao fatto con vue",
             image: "https://picsum.photos/200/300"
         }
     }
@@ -52,4 +52,11 @@ createApp({
 // let app = createApp(configurazione);
 
 // app.mount("#app");
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+//prove
+const input = document.querySelector("#prova>input");
+const h1 = document.querySelector("#prova>h1");
 
+setInterval(function(){
+    h1.innerHTML = input.value;
+},0);
